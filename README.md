@@ -8,7 +8,9 @@ To get started with this project, follow these steps:
 
 1. Clone this repository.
 2. Install dependencies with `npm install`.
-3. Start the development server with `npm start`.
+3. Start the development server with `npm run dev`.
+4. Run test with `npm run test`.  
+  
 
 # Project Structure
 
