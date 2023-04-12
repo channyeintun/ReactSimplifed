@@ -1,52 +1,77 @@
 # Project Structure
 
 ```
+node_modules/
+|
+public/
+├── index.html
+├── favicon.ico
+docs/
+|
+cypress/
+|
 src/
 ├── components/
-│   ├── Header.js
-│   ├── Footer.js
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── types.d.ts
 │   └── ...
 ├── routes/
-│   ├── AppRoutes.js
+│   ├── types.d.ts
+│   ├── AppRoutes.tsx
 │   └── ...
 ├── hooks/
-│   ├── useAuth.js
-│   ├── useModal.js
+│   ├── types.d.ts
+│   ├── useAuth.tsx
+│   ├── useModal.tsx
 │   └── ...
+├── hoc/
+│   │   ├── types.d.ts
+│   │   ├── ErrorBoundary.tsx
+│   │   ├── withLoading.tsx
+│   │   └── PrivateRoute.tsx
 ├── store/
-│   ├── configureStore.js
-│   ├── rootReducer.js
+│   ├── configureStore.ts
+│   ├── rootReducer.ts
 │   ├── auth/
-│   │   ├── authSlice.js
-│   │   ├── authAPI.js
+│   │   ├── authSlice.ts
+│   │   ├── authAPI.ts
 │   │   └── ...
+│   ├── types.d.ts
 │   └── ...
 ├── styles/
 │   ├── global.css
 │   ├── Header.module.css
 │   └── ...
 ├── modules/
-│   ├── home/
-│   │   ├── HomeRoutes.js
-│   │   ├── HomePage.js
-│   │   ├── homeSlice.js
-│   │   ├── homeAPI.js
-│   │   ├── homeStyles.module.css
-│   │   └── ...
 │   ├── login/
-│   │   ├── LoginPage.js
-│   │   ├── loginSlice.js
-│   │   ├── loginAPI.js
+│   │   ├── LoginPage.tsx
+│   │   ├── loginSlice.ts
+│   │   ├── loginAPI.ts
 │   │   ├── loginStyles.module.css
-│   │   └── ...
-│   ├── dashboard/
-│   │   ├── DashboardRoutes.js
-│   │   ├── DashboardPage.js
-│   │   ├── dashboardSlice.js
-│   │   ├── dashboardAPI.js
-│   │   ├── dashboardStyles.module.css
+│   │   ├── types.d.ts
 │   │   └── ...
 │   └── ...
-├── App.js
-└── index.js
+├── tests/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── routes/
+│   │   ├── store/
+│   │   ├── utils/
+|   |   └── setupTests.ts
+│   │   └── ...
+├── types/
+│   │   ├── index.d.ts
+│   │   └── ...
+├── App.tsx
+└── index.ts
+├── .env
+├── .gitignore
+├── .dockerignore
+├── Dockerfile
+├── docker-compose.yml
+├── vite.config.ts
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
