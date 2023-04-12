@@ -18,8 +18,7 @@ To get started with this project, follow these steps:
 node_modules/
 |
 public/
-├── index.html
-├── favicon.ico
+├── vite.svg
 docs/
 |
 cypress/
